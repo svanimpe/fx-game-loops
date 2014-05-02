@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane hgap="10.0" vgap="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <columnConstraints>
+        <ColumnConstraints halignment="RIGHT" hgrow="NEVER" minWidth="-Infinity" />
+        <ColumnConstraints hgrow="ALWAYS" minWidth="-Infinity" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="-Infinity" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="-Infinity" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="-Infinity" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="-Infinity" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="-Infinity" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <Label text="Game:" />
+        <Label text="Loop:" GridPane.rowIndex="1" />
+        <Label text="Objects:" GridPane.rowIndex="3" />
+        <ChoiceBox fx:id="gamesBox" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" />
+        <ChoiceBox fx:id="loopsBox" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <ChoiceBox fx:id="objectsBox" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        <Button mnemonicParsing="false" onAction="#play" text="Play" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="4" />
+        <Label text="Max step:" GridPane.rowIndex="2" />
+        <HBox alignment="BASELINE_LEFT" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <children>
+                <CheckBox fx:id="maxStepCheck" mnemonicParsing="false" />
+                <ChoiceBox fx:id="stepsBox" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
+            </children>
+        </HBox>
+    </children>
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+</GridPane>
