@@ -7,3 +7,8 @@ nb-configuration.xml
 ._*
 .Spotlight-V100
 .Trashes
+
+# Intellij
+.idea/
+*.iml
+*.iws
