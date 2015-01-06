@@ -1,3 +1,11 @@
+.ball {
+    -fx-background-color: rgb(100%,0%,0%);
+    -fx-border-color: black;
+    -fx-border-size: 10;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
 .ball:frame0{
     -fx-background-color: rgb(100%,0%,0%);
 }
