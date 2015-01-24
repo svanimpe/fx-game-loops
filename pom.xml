@@ -7,8 +7,8 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>FX Game Loop</name>
-    <url>https://github.com/svanimpe/fx-game-loop</url>
+    <name>Game loops in JavaFX</name>
+    <url>https://github.com/svanimpe/fx-game-loops</url>
     
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
