@@ -18,6 +18,7 @@ import javafx.stage.Stage;
 import org.jbox2d.common.Vec2;
 import org.jbox2d.dynamics.Body;
 import org.jbox2d.dynamics.World;
+import svanimpe.fxgameloop.animatedballpit.CssAnimatedBallPit;
 import svanimpe.fxgameloop.game.BallPit;
 import svanimpe.fxgameloop.game.Game;
 import svanimpe.fxgameloop.loop.FixedSteps;
@@ -48,7 +49,7 @@ public class Main extends Application
     
     @FXML
     private CheckBox maxStepCheck;
-    
+
     @FXML
     private ChoiceBox<Float> stepsBox;
     
@@ -69,7 +70,7 @@ public class Main extends Application
         root.getChildren().addAll(controls, fpsLabel);
         
         gamesBox.setItems(FXCollections.observableArrayList(
-                new BallPit()
+                new BallPit(), new CssAnimatedBallPit()
         ));
         gamesBox.getSelectionModel().selectFirst();
         
@@ -97,6 +98,7 @@ public class Main extends Application
         objectsBox.getSelectionModel().selectFirst();
        
         Scene scene = new Scene(root, WIDTH * SCALE, HEIGHT * SCALE);
+        scene.getStylesheets().add(getClass().getResource("/main.css").toExternalForm());
         stage.setScene(scene);
         stage.setTitle("FX Game Loop");
         stage.setResizable(false);
@@ -114,6 +116,7 @@ public class Main extends Application
             }
             root.getChildren().remove(0); /* Remove the previous gamePane. */
             fpsLabel.setText("");
+            world.setContactListener(null);
         }
         
         activeGame = gamesBox.getValue();

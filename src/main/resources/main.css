@@ -1,0 +1,38 @@
+.ball {
+    -fx-background-color: rgb(100%,0%,0%);
+    -fx-border-color: black;
+    -fx-border-size: 10;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+.ball:frame0{
+    -fx-background-color: rgb(100%,0%,0%);
+}
+.ball:frame1{
+    -fx-background-color: rgb(20%,0%,80%);
+}
+.ball:frame2{
+    -fx-background-color: rgb(30%,0%,70%);
+}
+.ball:frame3{
+    -fx-background-color: rgb(40%,0%,60%);
+}
+.ball:frame4{
+    -fx-background-color: rgb(50%,0%,50%);
+}
+.ball:frame5{
+    -fx-background-color: rgb(60%,0%,40%);
+}
+.ball:frame6{
+    -fx-background-color: rgb(70%,0%,30%);
+}
+.ball:frame7{
+    -fx-background-color: rgb(80%,0%,20%);
+}
+.ball:frame8{
+    -fx-background-color: rgb(90%,0%,10%);
+}
+.ball:frame9{
+    -fx-background-color: rgb(100%,0%,0%);
+}
